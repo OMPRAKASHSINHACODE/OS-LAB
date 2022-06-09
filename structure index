@@ -1,0 +1,23 @@
+#include <stdio.h>
+struct student {
+    char name[50];
+    char addr[50];
+    long long no;
+}s;
+
+int main() {
+    printf("Storing the information: ")
+    printf("Enter name: ");
+    fgets(s.name, sizeof(s.name), stdin);
+    printf("Enter address: ");
+    fgets(s.addr, sizeof(s.addr), stdin);    
+    printf("contact number ");
+    scanf("%lld", &s.no);
+    printf("\n\n");
+    printf("Name: ");
+    printf("%s", s.name);
+    printf("Addresss: %s", s.addr);
+    printf("contact number %lld\n", s.no);
+
+    return 0;
+}
